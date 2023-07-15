@@ -1,0 +1,33 @@
+<div class="card">
+  <div class="card-header">
+   INPUT'S
+  </div>
+<form action="" [formGroup]="oneForm">
+   <div class="card-body">
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Type : </label>
+      <select class="form-select" aria-label="Default select example" formControlName="type" >
+        <option selected>Open this select menu</option>
+        <option value="text">text</option>
+        <option value="number">number</option>
+        <option value="date">date</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Label : </label>
+      <input type="text" class="form-control"  placeholder="Label" formControlName="label">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Name : </label>
+      <input type="text" class="form-control"  placeholder="Name" formControlName="name">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Value : </label>
+      <input type="text" class="form-control" placeholder="Value" formControlName="value">
+    </div>
+    <div class="mb-3">
+        <button class="btn btn-primary rounded-0" (click)="addInCommonService()">Add</button>
+    </div>
+  </div>
+</form>
+</div>
